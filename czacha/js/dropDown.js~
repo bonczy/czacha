@@ -1,0 +1,17 @@
+function createDropList($container) {
+    const dropDownList = document.createElement("select");
+    const myOption = document.createElement("option");
+    myOption.value = 'costa costam';
+    dropDownList.appendChild(myOption);
+    $container.appendChild(dropDownList);
+}
+
+function init() {
+
+    // gameStartTime=Date.now();//my update
+
+    const $container = document.querySelector(".container");
+    createDropList($container);
+}
+
+init();
